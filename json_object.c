@@ -312,7 +312,7 @@ void json_object_object_add(struct json_object* jso, const char *key,
 
 struct json_object* json_object_object_get(struct json_object* jso, const char *key)
 {
-  struct json_object *result;
+  struct json_object *result = NULL;
   json_object_object_get_ex(jso, key, &result);
   return result;
 }
